@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect, useCallback } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-import CardGalery from "./CardGalery";
+import CardGalery from "./cardGalery";
 
 const Galery = ({ infoSlide }) => {
   const [currentBackgroundIndex, setCurrentBackgroundIndex] = useState(0);
