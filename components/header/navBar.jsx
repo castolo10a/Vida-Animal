@@ -137,7 +137,7 @@ export default function NavBar() {
                             <ul className={`${scrolling ? 'bg-white' : 'bg-pink2'}mt-2 space-y-1 px-4`}>
                                 <li>
                                     <Link
-                                        href="/Services#Surgeries_and_emergencies"
+                                        href="/Services/#Surgeries_and_emergencies"
                                         className="flex items-center space-x-2 block py-2 pl-3 pr-4 rounded text-sm  text-gray-500 hover:bg-green hover:text-gray-700"
                                         onClick={action}
                                         >
@@ -147,7 +147,7 @@ export default function NavBar() {
                                 </li>
                                 <li>
                                     <Link
-                                        href="/Services#General_inquiry"
+                                        href="/Services/#General_inquiry"
                                         className="flex items-center space-x-2 block py-2 pl-3 pr-4 rounded text-sm  text-gray-500 hover:bg-green hover:text-gray-700"
                                         onClick={action}
                                     >
@@ -157,7 +157,7 @@ export default function NavBar() {
                                 </li>
                                 <li>
                                     <Link
-                                        href="/Services#Hygienic_bathroom"
+                                        href="/Services/#Hygienic_bathroom"
                                         className="flex items-center space-x-2 block py-2 pl-3 pr-4 rounded text-sm  text-gray-500 hover:bg-green hover:text-gray-700"
                                         onClick={action}
                                     >
@@ -167,7 +167,7 @@ export default function NavBar() {
                                 </li>
                                 <li>
                                     <Link
-                                        href="/Services#Sampling"
+                                        href="/Services/#Sampling"
                                         className="flex items-center space-x-2 block py-2 pl-3 pr-4 rounded text-sm  text-gray-500 hover:bg-green hover:text-gray-700"
                                         onClick={action}
                                     >
@@ -177,7 +177,7 @@ export default function NavBar() {
                                 </li>
                                 <li>
                                     <Link
-                                        href="/Services#Dental_Prophylaxis"
+                                        href="/Services/#Dental_Prophylaxis"
                                         className="flex items-center space-x-2 block py-2 pl-3 pr-4 rounded text-sm  text-gray-500 hover:bg-green hover:text-gray-700"
                                         onClick={action}
                                     >
@@ -187,7 +187,7 @@ export default function NavBar() {
                                 </li>
                                 <li>
                                     <Link
-                                        href="/Services#Vaccination_plan"
+                                        href="/Services/#Vaccination_plan"
                                         className="flex items-center space-x-2 block py-2 pl-3 pr-4 rounded text-sm  text-gray-500 hover:bg-green hover:text-gray-700"
                                         onClick={action}
                                     >
