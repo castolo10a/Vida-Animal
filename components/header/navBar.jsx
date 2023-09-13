@@ -136,64 +136,64 @@ export default function NavBar() {
 
                             <ul className={`${scrolling ? 'bg-white' : 'bg-pink2'}mt-2 space-y-1 px-4`}>
                                 <li>
-                                    <Link
+                                    <a
                                         href="/Services/#Surgeries_and_emergencies"
                                         className="flex items-center space-x-2 block py-2 pl-3 pr-4 rounded text-sm  text-gray-500 hover:bg-green hover:text-gray-700"
                                         onClick={action}
                                         >
                                         <span>Cirugías y Emergencias</span>
                                         <FaRegHospital size={15}/>
-                                    </Link>
+                                    </a>
                                 </li>
                                 <li>
-                                    <Link
+                                    <a
                                         href="/Services/#General_inquiry"
                                         className="flex items-center space-x-2 block py-2 pl-3 pr-4 rounded text-sm  text-gray-500 hover:bg-green hover:text-gray-700"
                                         onClick={action}
                                     >
                                             <span>Consulta General</span>
                                             <FaUserMd size={15}/>
-                                    </Link>
+                                    </a>
                                 </li>
                                 <li>
-                                    <Link
+                                    <a
                                         href="/Services/#Hygienic_bathroom"
                                         className="flex items-center space-x-2 block py-2 pl-3 pr-4 rounded text-sm  text-gray-500 hover:bg-green hover:text-gray-700"
                                         onClick={action}
                                     >
                                         <span>Baño Higiénico</span>
                                         <FaDog size={15}/>
-                                    </Link>
+                                    </a>
                                 </li>
                                 <li>
-                                    <Link
+                                    <a
                                         href="/Services/#Sampling"
                                         className="flex items-center space-x-2 block py-2 pl-3 pr-4 rounded text-sm  text-gray-500 hover:bg-green hover:text-gray-700"
                                         onClick={action}
                                     >
                                         <span>Toma de Muestras</span>
                                         <FaCat size={15}/>
-                                    </Link>
+                                    </a>
                                 </li>
                                 <li>
-                                    <Link
+                                    <a
                                         href="/Services/#Dental_Prophylaxis"
                                         className="flex items-center space-x-2 block py-2 pl-3 pr-4 rounded text-sm  text-gray-500 hover:bg-green hover:text-gray-700"
                                         onClick={action}
                                     >
                                         <span>Profilaxis Dental</span>
                                         <FaTooth size={15}/>
-                                    </Link>
+                                    </a>
                                 </li>
                                 <li>
-                                    <Link
+                                    <a
                                         href="/Services/#Vaccination_plan"
                                         className="flex items-center space-x-2 block py-2 pl-3 pr-4 rounded text-sm  text-gray-500 hover:bg-green hover:text-gray-700"
                                         onClick={action}
                                     >
                                         <span>Plan de Vacunación</span>
                                         <FaSyringe size={15}/>
-                                    </Link>
+                                    </a>
                                 </li>
                             </ul>
                         </details>
