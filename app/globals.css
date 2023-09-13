@@ -1,0 +1,43 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+.bg-perfil{
+    background-image: url(../assets//perfil.jpg);
+}
+.bg-baño{
+    background-image: url(../assets/baño.jpg);
+}
+.bg-consulta{
+    background-image: url(../assets/consulta_general.jpg);
+}
+.bg-almacen{
+    background-image: url(../assets/entrada_almacen.jpg);
+}
+.bg-fluidoTerapia{
+    background-image: url(../assets/fluidoterapia.jpg);
+}
+.bg-cirugia{
+    background-image: url(../assets/hospitalizacion_y_cirugia.jpg);
+}
+.bg-vacunas{
+    background-image: url(../assets/plan_vacunacion.jpg);
+}
+.bg-productos{
+    background-image: url(../assets/productos.jpg);
+}
+.bg-productos2{
+    background-image: url(../assets/productos2.jpg);
+}
+.bg-muestras{
+    background-image: url(../assets/toma_de_muestras.jpg);
+}
+.bg-baño2{
+    background-image: url(../assets/baño2.jpg);
+}
+.bg-profilaxis{
+    background-image: url(../assets/profilaxis_dental.jpg);
+}
+.bg-wallpaper{
+    background-image: url(../assets/wallpaper.png);
+}
+
