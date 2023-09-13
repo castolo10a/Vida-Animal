@@ -9,7 +9,7 @@ const infoSlide = [
     },
     {
         image: 'bg-productos2',
-        title: 'Productos'
+        title: 'Comida Perros'
     },
     {
         image: 'bg-consulta',
@@ -33,7 +33,7 @@ const infoSlide = [
     },
     {
         image: 'bg-productos',
-        title: 'Productos'
+        title: 'Comida Gatos'
     },
     {
         image: 'bg-muestras',
