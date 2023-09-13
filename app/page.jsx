@@ -1,10 +1,10 @@
-import ButtonPath from "@/components/buttons/buttonpath";
-import CardService from "@/components/cardService/cardService";
-import CardInfo from "@/components/cardInfo/cardInfo";
+import ButtonPath from "../components/buttons/buttonpath";
+import CardService from "../components/cardService/cardService";
+import CardInfo from "../components/cardInfo/cardInfo";
 import { FaInstagram } from "react-icons/fa";
 import { infoServices } from "./infoServices";
 import { Amita } from 'next/font/google'
-import home from '@/assets/principal2.png';
+import home from '../assets/principal2.png';
 
 const amita = Amita({
     weight: ['400', '700'],

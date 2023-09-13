@@ -1,4 +1,4 @@
-import Galery from "@/components/galery/galery";
+import Galery from "../../components/galery/galery";
 import infoSlide from "./infoSlide";
 import { Amita } from 'next/font/google'
 

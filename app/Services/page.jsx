@@ -1,4 +1,4 @@
-import CardInfo from "@/components/cardInfo/cardInfo";
+import CardInfo from "../../components/cardInfo/cardInfo";
 import { infoServicesCards } from "./infoServicesCards";
 import { Amita } from 'next/font/google'
 

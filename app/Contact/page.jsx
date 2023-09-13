@@ -3,7 +3,7 @@
 import { useState, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import contact from '@/assets/contact.jpg';
+import contact from '../../assets/contact.jpg';
 import { SiDatadog } from 'react-icons/si';
 import Swal from "sweetalert2";
 import { Amita } from 'next/font/google'
