@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import wpp from '@/assets/wpp.png';
+import wpp from '../../assets/wpp.png';
 
 const Wpp = () => {
   return (

@@ -1,5 +1,5 @@
-import huesito from '@/assets/huesito.png'
-import logo from '@/assets/logo.jpg'
+import huesito from '../../assets/huesito.png'
+import logo from '../../assets/logo.jpg'
 import Link from 'next/link'
 import Image from 'next/image'
 import {FaInstagram, FaWhatsapp} from 'react-icons/fa'

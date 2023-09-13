@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import logo from '@/assets/logo_sin_fondo.png'
+import logo from '../../assets/logo_sin_fondo.png'
 
 export default function Logo() {
     return (
