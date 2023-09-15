@@ -1,8 +1,7 @@
 [build]
   command = "npm run build"
-  publish = "build" # Remove the leading slash
+  publish = "build"
   base = "/"
-  image = "netlify/build:x.y.z"
   
 [[redirects]]
   from = "/*"
