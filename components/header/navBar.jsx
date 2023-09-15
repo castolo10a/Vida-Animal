@@ -1,18 +1,23 @@
 'use client'
 
 import React, { useState, useEffect } from "react";
-import { FiMenu, FiX, FiPhone, FiCalendar, FiMapPin, FiHome, FiUsers, FiPackage, FiMail } from 'react-icons/fi';
+import { FiMenu, FiX, FiPhone, FiCalendar, FiMapPin, FiHome, FiUsers, FiPackage, FiMail, FiChevronDown, FiChevronUp } from 'react-icons/fi';
 import Link from "next/link";
 import Logo from "./logo";
 import { FaCat, FaDog, FaRegHospital, FaSyringe, FaTooth, FaUserMd } from "react-icons/fa";
 
 export default function NavBar() {
     const [oculto, setOculto] = useState(true);
+    const [noActive, setNoActive] = useState(true);
     const [scrolling, setScrolling] = useState(false);
 
     const action = () => {
         setOculto(!oculto);
     };
+
+    const actionLi = () => {
+        setNoActive(!noActive)
+    }
 
     useEffect(() => {
         const handleScroll = () => {
@@ -110,30 +115,28 @@ export default function NavBar() {
                         </Link>
                     </li>
                     <li>
-                        <details className="group">
-                        <summary
-                            className="flex cursor-pointer items-center space-x-2 block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-pink dark:hover:text-white"
+                       <div className="flex items-center cursor-pointer items-center space-x-2 block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-pink dark:hover:text-white">
+                         <Link href='/Services' className="flex flex-row">
+                            <FiPackage size={20} />
+                            <span className="px-2">Servicios</span>
+                        </Link>
+                        <button
+                             onClick={actionLi}
+                            data-collapse-toggle="navbar-Services"
+                            type="button"
+                            className="text-gray-900 rounded hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-pink dark:hover:text-white pr-4"
+                            aria-controls="navbar-Services"
                         >
-                            <div className="flex items-center">
-                                <FiPackage size={20} />
-                                <span className="ml-2">Servicios</span>
-                            </div>
-                            <span className="shrink-0 transition duration-300 group-open:-rotate-180">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    className="h-5 w-5"
-                                    viewBox="0 0 20 20"
-                                    fill="currentColor"
-                                >
-                                    <path
-                                        fillRule="evenodd"
-                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                        clipRule="evenodd"
-                                    />
-                                </svg>
-                            </span>
-                        </summary>
+                            {noActive ? <FiChevronDown size={15} /> : <FiChevronUp size={15} />}
+                        </button>
+                       </div>
 
+                       <div
+                            className={`${
+                                noActive ? "hidden w-full" : "w-full"
+                            }`}
+                            id="navbar-Services"
+                       >
                             <ul className={`${scrolling ? 'bg-white' : 'bg-pink2'}mt-2 space-y-1 px-4`}>
                                 <li>
                                     <Link
@@ -197,7 +200,7 @@ export default function NavBar() {
                                     </Link>
                                 </li>
                             </ul>
-                        </details>
+                        </div>
                     </li>
                     <li>
                         <Link
