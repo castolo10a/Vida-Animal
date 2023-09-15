@@ -136,82 +136,65 @@ export default function NavBar() {
 
                             <ul className={`${scrolling ? 'bg-white' : 'bg-pink2'}mt-2 space-y-1 px-4`}>
                                 <li>
-                                <a
-                                    href= '/Services/#Surgeries_and_emergencies'
-                                >
-                                    <div
+                                    <a
+                                        href= '/Services/#Surgeries_and_emergencies'
                                         className="flex items-center space-x-2 block py-2 pl-3 pr-4 rounded text-sm text-gray-500 hover:bg-green hover:text-gray-700"
                                         onClick={action}
                                     >
                                         <span>Cirugías y Emergencias</span>
                                         <FaRegHospital size={15} />
-                                    </div>
-                                </a>
+                                    </a>
                                 </li>
                                 <li>
-                                <a
-                                    href= '/Services/#General_inquiry'
-                                >
-                                    <div
+                                    <a
+                                        href= '/Services/#General_inquiry'
                                         className="flex items-cantidadenter space-x-2 block py-2 pl-3 pr-4 rounded text-sm text-gray-500 hover:bg-green hover:text-gray-700"
                                         onClick={action}
                                     >
                                         <span>Consulta General</span>
                                         <FaUserMd size={15} />
-                                    </div>
-                                </a>
+                                    </a>
                                 </li>
                                 <li>
-                                <a
-                                    href= '/Services/#Hygienic_bathroom'
-                                >
-                                    <div
+                                    <a
+                                        href= '/Services/#Hygienic_bathroom'
                                         className="flex items-cantidadenter space-x-2 block py-2 pl-3 pr-4 rounded text-sm text-gray-500 hover:bg-green hover:text-gray-700"
                                         onClick={action}
                                     >
                                         <span>Baño Higiénico</span>
                                         <FaDog size={15} />
-                                    </div>
-                                </a>
+                                    </a>
                                 </li>
                                 <li>
-                                <a
-                                    href= '/Services/#Sampling'
-                                >
-                                    <div
+                                    <a
+                                        href= '/Services/#Sampling'
                                         className="flex items-cantidadenter space-x-2 block py-2 pl-3 pr-4 rounded text-sm text-gray-500 hover:bg-green hover:text-gray-700"
                                         onClick={action}
                                     >
                                         <span>Toma de Muestras</span>
                                         <FaCat size={15} />
-                                    </div>
-                                </a>
+                                        
+                                    </a>
                                 </li>
                                 <li>
-                                <a
-                                    href= '/Services/#Dental_Prophylaxis'
-                                >
-                                    <div
+                                    <a
+                                        href= '/Services/#Dental_Prophylaxis'
                                         className="flex items-cantidadenter space-x-2 block py-2 pl-3 pr-4 rounded text-sm text-gray-500 hover:bg-green hover:text-gray-700"
                                         onClick={action}
                                     >
                                         <span>Profilaxis Dental</span>
                                         <FaTooth size={15} />
-                                    </div>
-                                </a>
+                                    </a>
                                 </li>
                                 <li>
-                                <a
-                                    href= '/Services/#Vaccination_plan'
-                                >
-                                    <div
+                                    <a
+                                        href= '/Services/#Vaccination_plan'
                                         className="flex items-cantidadenter space-x-2 block py-2 pl-3 pr-4 rounded text-sm text-gray-500 hover:bg-green hover:text-gray-700"
                                         onClick={action}
                                     >
                                         <span>Plan de Vacunación</span>
                                         <FaSyringe size={15} />
-                                    </div>
-                                </a>
+                                    </a>
                                 </li>
                             </ul>
                         </details>
