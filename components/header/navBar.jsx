@@ -136,8 +136,8 @@ export default function NavBar() {
 
                             <ul className={`${scrolling ? 'bg-white' : 'bg-pink2'}mt-2 space-y-1 px-4`}>
                                 <li>
-                                <Link
-                                    href= "/Services#Surgeries_and_emergencies" passHref
+                                <a
+                                    href= '/Services/#Surgeries_and_emergencies'
                                 >
                                     <div
                                         className="flex items-center space-x-2 block py-2 pl-3 pr-4 rounded text-sm text-gray-500 hover:bg-green hover:text-gray-700"
@@ -146,11 +146,11 @@ export default function NavBar() {
                                         <span>Cirugías y Emergencias</span>
                                         <FaRegHospital size={15} />
                                     </div>
-                                </Link>
+                                </a>
                                 </li>
                                 <li>
-                                <Link
-                                    href= '/Services/#General_inquiry' passHref
+                                <a
+                                    href= '/Services/#General_inquiry'
                                 >
                                     <div
                                         className="flex items-cantidadenter space-x-2 block py-2 pl-3 pr-4 rounded text-sm text-gray-500 hover:bg-green hover:text-gray-700"
@@ -159,11 +159,11 @@ export default function NavBar() {
                                         <span>Consulta General</span>
                                         <FaUserMd size={15} />
                                     </div>
-                                </Link>
+                                </a>
                                 </li>
                                 <li>
-                                <Link
-                                    href="/Services#Hygienic_bathroom" passHref
+                                <a
+                                    href= '/Services/#Hygienic_bathroom'
                                 >
                                     <div
                                         className="flex items-cantidadenter space-x-2 block py-2 pl-3 pr-4 rounded text-sm text-gray-500 hover:bg-green hover:text-gray-700"
@@ -172,12 +172,11 @@ export default function NavBar() {
                                         <span>Baño Higiénico</span>
                                         <FaDog size={15} />
                                     </div>
-                                </Link>
+                                </a>
                                 </li>
                                 <li>
-                                <Link
-                                    href="/Services#Sampling"
-                                    passHref
+                                <a
+                                    href= '/Services/#Sampling'
                                 >
                                     <div
                                         className="flex items-cantidadenter space-x-2 block py-2 pl-3 pr-4 rounded text-sm text-gray-500 hover:bg-green hover:text-gray-700"
@@ -186,12 +185,11 @@ export default function NavBar() {
                                         <span>Toma de Muestras</span>
                                         <FaCat size={15} />
                                     </div>
-                                </Link>
+                                </a>
                                 </li>
                                 <li>
-                                <Link
-                                    href="/Services#Dental_Prophylaxis"
-                                    passHref
+                                <a
+                                    href= '/Services/#Dental_Prophylaxis'
                                 >
                                     <div
                                         className="flex items-cantidadenter space-x-2 block py-2 pl-3 pr-4 rounded text-sm text-gray-500 hover:bg-green hover:text-gray-700"
@@ -200,12 +198,11 @@ export default function NavBar() {
                                         <span>Profilaxis Dental</span>
                                         <FaTooth size={15} />
                                     </div>
-                                </Link>
+                                </a>
                                 </li>
                                 <li>
-                                <Link
-                                    href="/Services#Vaccination_plan"
-                                    passHref
+                                <a
+                                    href= '/Services/#Vaccination_plan'
                                 >
                                     <div
                                         className="flex items-cantidadenter space-x-2 block py-2 pl-3 pr-4 rounded text-sm text-gray-500 hover:bg-green hover:text-gray-700"
@@ -214,7 +211,7 @@ export default function NavBar() {
                                         <span>Plan de Vacunación</span>
                                         <FaSyringe size={15} />
                                     </div>
-                                </Link>
+                                </a>
                                 </li>
                             </ul>
                         </details>
