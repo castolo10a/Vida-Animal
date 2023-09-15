@@ -116,7 +116,11 @@ export default function NavBar() {
                     </li>
                     <li>
                        <div className="flex items-center cursor-pointer items-center space-x-2 block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-pink dark:hover:text-white">
-                         <Link href='/Services' className="flex flex-row">
+                         <Link 
+                            href='/Services'
+                            className="flex flex-row"
+                            onClick={action}
+                        >
                             <FiPackage size={20} />
                             <span className="px-2">Servicios</span>
                         </Link>
