@@ -92,7 +92,7 @@ export default function NavBar() {
                 }`}
                 id="navbar-hamburger"
             >
-                 <ul className={`${scrolling ? 'bg-white' : 'bg-pink2'} flex flex-col mt-4 rounded-lg border-gray-200`}>
+                 <ul className={`${scrolling ? 'bg-white' : 'bg-wallpaper'} flex flex-col mt-4 rounded-lg border-gray-200`}>
                     <li>
                         <Link
                             href="/"
@@ -141,7 +141,7 @@ export default function NavBar() {
                             }`}
                             id="navbar-Services"
                        >
-                            <ul className={`${scrolling ? 'bg-white' : 'bg-pink2'}mt-2 space-y-1 px-4`}>
+                            <ul className={`${scrolling ? 'bg-white' : 'bg-wallpaper'}mt-2 space-y-1 px-4`}>
                                 <li>
                                     <a
                                         href= '/Services/#Surgeries_and_emergencies'
