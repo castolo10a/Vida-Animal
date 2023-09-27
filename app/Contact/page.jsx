@@ -3,6 +3,7 @@
 import { useState, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import emailjs from '@emailjs/browser';
 import contact from '../../assets/contact.jpg';
 import { SiDatadog } from 'react-icons/si';
 import Swal from "sweetalert2";
@@ -83,16 +84,6 @@ export default function Contact(){
           customClass: {
             title: 'md:text-4xl',
             confirmButton: 'bg-pink hover:bg-opacity-75 text-gray-200 py-2 px-4 rounded',
-          },
-          showClass: {
-            popup: 'swal2-show',
-            backdrop: 'swal2-backdrop-show',
-            icon: 'swal2-icon-show',
-          },
-          hideClass: {
-            popup: 'swal2-hide',
-            backdrop: 'swal2-backdrop-hide',
-            icon: 'swal2-icon-hide',
           }
         })
       }else{
@@ -104,33 +95,23 @@ export default function Contact(){
           customClass: {
             title: 'md:text-4xl',
             confirmButton: 'bg-pink hover:bg-opacity-75 text-gray-200 py-2 px-4 rounded',
-          },
-          showClass: {
-            popup: 'swal2-show',
-            backdrop: 'swal2-backdrop-show',
-            icon: 'swal2-icon-show',
-          },
-          hideClass: {
-            popup: 'swal2-hide',
-            backdrop: 'swal2-backdrop-hide',
-            icon: 'swal2-icon-hide',
           }
         })
-        // emailjs
-        //   .sendForm(
-        //     process.env.REACT_APP_EMAILJS_SERVICE_ID,
-        //     process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
-        //     form.current,
-        //     process.env.REACT_APP_EMAILJS_PUBLIC_KEY
-        //   )
-        //   .then(
-        //     (result) => {
-        //       console.log(result.text)
-        //     },
-        //     (error) => {
-        //       console.log(error.text)
-        //     }
-        //   )
+        emailjs
+          .sendForm(
+            process.env.NEXT_PUBLIC_REACT_APP_EMAILJS_SERVICE_ID,
+            process.env.NEXT_PUBLIC_REACT_APP_EMAILJS_TEMPLATE_ID,
+            form.current,
+            process.env.NEXT_PUBLIC_REACT_APP_EMAILJS_PUBLIC_KEY
+          )
+          .then(
+            (result) => {
+              console.log(result.text)
+            },
+            (error) => {
+              console.log(error.text)
+            }
+          )
         setInput(initialState)
       }
     }
