@@ -136,7 +136,7 @@ export default function Footer(){
                         rel="noopener noreferrer"
                         className='transition hover:opacity-75'
                     >
-                    Creado por DaniDev FullStack
+                    Creado por CastilloCoder
                     </a>
                 </p>
             </div>
