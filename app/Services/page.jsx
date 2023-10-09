@@ -11,7 +11,7 @@ const amita = Amita({
 export default function Services(){
     return (
         <div>
-            <div className={`${amita.className} bg-wallpaper flex flex-col justify-center items-center text-center mx-auto px-6 py-40 md:px-4`}>
+            <div className={`${amita.className} bg-wallpaper h-screen flex flex-col justify-center items-center text-center mx-auto px-6 py-40 md:px-4`}>
                 <h2 className="animate-fade-right animate-duration-[5000ms] text-gray-500 text-xl md:text-2xl z-10">Conoce todos nuestros</h2>
                 <h2 className="animate-fade-left animate-duration-[5000ms] text-gray-500 text-4xl md:text-6xl px-8 md:pb-8">
                 Servicios Vida Animal

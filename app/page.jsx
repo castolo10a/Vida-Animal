@@ -16,7 +16,7 @@ export default function Home(){
     return(
         <div>
 
-            <div className='bg-wallpaper flex flex-col justify-center text-center items-center mx-auto px-6 py-40 md:px-4'>
+            <div className='bg-wallpaper h-screen flex flex-col justify-center text-center items-center mx-auto px-6 py-40 md:px-4'>
                 <div className="pb-40">
                     <h2 className="animate-fade-right animate-duration-[5000ms] text-gray-500 text-4xl md:text-6xl z-10">Centro Médico Veterinario</h2>
                     <h2 className="animate-fade-left animate-duration-[5000ms] text-gray-500 text-xl md:text-2xl px-8 md:pb-30">
