@@ -108,12 +108,12 @@ export default function Footer(){
                             <ul className="mt-6 space-y-4 text-sm">
                                 <li>
                                     <a 
-                                        href="https://www.google.com/maps/place/Vida+Animal/@5.4503764,-74.6660511,17z/data=!3m1!4b1!4m6!3m5!1s0x8e40dfe344812909:0xa5ca1aef1b0f65f6!8m2!3d5.4503764!4d-74.6634762!16s%2Fg%2F11l1n9c_sn?entry=ttu"
+                                        href="https://www.google.com/maps/place/Vida+Animal+-+Centro+M%C3%A9dico+Veterinario/@5.4527656,-74.6688524,15.75z/data=!4m14!1m7!3m6!1s0x8e40dfe344812909:0xa5ca1aef1b0f65f6!2sVida+Animal+-+Centro+M%C3%A9dico+Veterinario!8m2!3d5.4546567!4d-74.6658299!16s%2Fg%2F11l1n9c_sn!3m5!1s0x8e40dfe344812909:0xa5ca1aef1b0f65f6!8m2!3d5.4546567!4d-74.6658299!16s%2Fg%2F11l1n9c_sn?entry=ttu"
                                         rel="noreferrer"
                                         target="_blank"
                                         className="text-gray-700 transition hover:opacity-75 cursor-pointer"
                                     >
-                                        Calle 11a # 4 - 23<br/>
+                                        Carrera 5 # 16 - 73<br/>
                                         Barrio Centro<br/>
                                         La Dorada - Caldas
                                     </a>
