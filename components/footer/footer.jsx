@@ -131,7 +131,7 @@ export default function Footer(){
 
                 <p className="mt-8 text-xs text-gray-500 sm:mt-0">
                     <a 
-                        href="https://fullstack-colombia.com/"
+                        href="https://fullstack-colombia.netlify.app/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className='transition hover:opacity-75'
