@@ -1,43 +1,56 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
-.bg-perfil{
-    background-image: url(../assets//perfil.jpg);
-}
-.bg-baño{
-    background-image: url(../assets/baño.jpg);
-}
-.bg-consulta{
-    background-image: url(../assets/consulta_general.jpg);
-}
-.bg-almacen{
-    background-image: url(../assets/entrada_almacen.jpg);
-}
-.bg-fluidoTerapia{
-    background-image: url(../assets/fluidoterapia.jpg);
-}
-.bg-cirugia{
-    background-image: url(../assets/hospitalizacion_y_cirugia.jpg);
-}
-.bg-vacunas{
-    background-image: url(../assets/plan_vacunacion.jpg);
-}
-.bg-productos{
-    background-image: url(../assets/productos.jpg);
-}
-.bg-productos2{
-    background-image: url(../assets/productos2.jpg);
-}
-.bg-muestras{
-    background-image: url(../assets/toma_de_muestras.jpg);
-}
-.bg-baño2{
-    background-image: url(../assets/baño2.jpg);
-}
-.bg-profilaxis{
-    background-image: url(../assets/profilaxis_dental.jpg);
-}
-.bg-wallpaper{
-    background-image: url(../assets/wallpaper.png);
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5.5rem;
+  }
+  body {
+    @apply bg-white text-ink antialiased;
+  }
+  h1, h2, h3, h4 {
+    @apply font-display text-ink;
+  }
+  ::selection {
+    @apply bg-magenta text-white;
+  }
 }
 
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-6xl px-5 md:px-8;
+  }
+  .section {
+    @apply py-20 md:py-28;
+  }
+  .eyebrow {
+    @apply inline-flex items-center gap-2 rounded-full bg-magenta-soft px-4 py-1.5 text-sm font-bold text-magenta-dark;
+  }
+  .section-title {
+    @apply mt-4 text-3xl font-semibold leading-tight md:text-5xl;
+  }
+  .section-lead {
+    @apply mt-4 text-lg leading-relaxed text-ink-soft;
+  }
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3.5 text-base font-bold transition duration-200 focus:outline-none focus-visible:ring-4 focus-visible:ring-magenta/30;
+  }
+  .btn-primary {
+    @apply btn bg-magenta text-white shadow-lift hover:-translate-y-0.5 hover:bg-magenta-dark;
+  }
+  .btn-secondary {
+    @apply btn border-2 border-ink/10 bg-white text-ink hover:border-magenta hover:text-magenta;
+  }
+  /* Forma inclinada inspirada en la "V" del logo */
+  .slant {
+    border-radius: 2rem;
+    transform: skewX(-10deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition: none !important; animation: none !important; }
+}

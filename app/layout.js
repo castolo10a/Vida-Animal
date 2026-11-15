@@ -1,33 +1,40 @@
-import NavBar from "../components/header/navBar";
-import Footer from "@/components/footer/footer";
-import Wpp from "@/components/wpp/wpp";
-import { Nunito } from 'next/font/google';
-import "./globals.css"
+import { Fredoka, Nunito } from 'next/font/google';
+import './globals.css';
 
 export const metadata = {
-  title: 'Vida Animal - Centro Médico Veterinario en La Dorada, Caldas',
-  description: 'Bienvenido a Vida Animal, tu centro médico veterinario en La Dorada, Caldas. Cuidamos de la salud y bienestar de tus mascotas con servicios de vacunación, baños, consultas, exámenes y productos de alta calidad. ¡Tu confianza es nuestra pasión!',
-  keywords: ['Veterinaria', 'mascotas', 'perros', 'gatos', 'salud animal', 'Caldas', 'La Dorada'],
-}
+  metadataBase: new URL('https://vida-animal.netlify.app'),
+  title: 'Vida Animal · Centro Médico Veterinario en La Dorada, Caldas',
+  description:
+    'Centro médico veterinario en La Dorada, Caldas. Consulta general, vacunación, cirugía, hospitalización, laboratorio, profilaxis dental, baño y tienda para tu mascota. Agenda por WhatsApp.',
+  keywords: ['Veterinaria', 'veterinaria La Dorada', 'mascotas', 'perros', 'gatos', 'vacunación', 'cirugía', 'Caldas'],
+  openGraph: {
+    title: 'Vida Animal · Centro Médico Veterinario',
+    description: 'Amor infinito por quienes nos enseñan a amar sin palabras. La Dorada, Caldas.',
+    locale: 'es_CO',
+    type: 'website',
+  },
+  themeColor: '#e00d86',
+};
 
-const nunito = Nunito({
-  weight: ['300', '400', '500'],
-  style: ['italic', 'normal'],
-  subsets: ['latin']
-})
- 
+const display = Fredoka({
+  subsets: ['latin'],
+  weight: ['500', '600', '700'],
+  variable: '--font-display',
+});
+
+const body = Nunito({
+  subsets: ['latin'],
+  weight: ['400', '600', '700', '800'],
+  variable: '--font-body',
+});
+
 export default function RootLayout({ children }) {
- return (
-    <html lang="en">
+  return (
+    <html lang="es" className={`${display.variable} ${body.variable}`}>
       <head>
         <link rel="icon" href="/favicon.jpg" />
       </head>
-      <body className={nunito.className}>
-        <NavBar />
-        {children}
-        <Wpp />
-        <Footer />
-      </body>
+      <body className="font-sans">{children}</body>
     </html>
-  )
+  );
 }

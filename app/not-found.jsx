@@ -1,34 +1,19 @@
-import Image from "next/image"
-import Link from "next/link"
-import imageNot from '@/assets/notFound.jpeg'
+import Image from 'next/image';
+import Link from 'next/link';
+import logo from '@/assets/logo_sin_fondo.png';
 
-export default function Services(){
-    return (
-        <div className="pt-40 pb-20 flex flex-col bg-white">
-            <Image
-                src={imageNot}
-                alt="not-found"
-                className="w-screen"
-            />
-
-            <div className="flex items-center justify-center flex-1">
-                <div className="max-w-xl px-4 py-8 mx-auto text-center">
-                <h1 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                    No se pudo encontrar esa página
-                </h1>
-
-                <p className="mt-4 text-gray-500 py-4">
-                    Intente buscar de nuevo o regrese a la página de inicio
-                </p>
-
-                <Link
-                    href="/"
-                    className="inline-block bg-pink hover:bg-opacity-75 border rounded-lg text-gray-200 px-4 py-2 mt-4 text-base md:text-xl"
-                >
-                    Ir al Inicio
-                </Link>
-                </div>
-            </div>
-        </div>
-    )
+export default function NotFound() {
+  return (
+    <main className="grid min-h-screen place-items-center bg-cream px-5 text-center">
+      <div className="max-w-md">
+        <Image src={logo} alt="Vida Animal" className="mx-auto h-14 w-auto" />
+        <p className="mt-10 font-display text-7xl font-bold text-magenta">404</p>
+        <h1 className="mt-2 text-3xl font-semibold">Esta página se escapó 🐾</h1>
+        <p className="mt-3 text-ink-soft">No encontramos lo que buscabas, pero seguro te podemos ayudar desde el inicio.</p>
+        <Link href="/" className="btn-primary mt-8">
+          Volver al inicio
+        </Link>
+      </div>
+    </main>
+  );
 }
