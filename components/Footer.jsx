@@ -76,7 +76,7 @@ export default function Footer() {
       <div className="border-t border-ink/10">
         <div className="container-page flex flex-col items-center justify-between gap-2 py-6 text-sm text-ink-muted sm:flex-row">
           <p>© {new Date().getFullYear()} Vida Animal · Centro Médico Veterinario</p>
-          <a href="https://fullstack-colombia.netlify.app/" target="_blank" rel="noopener noreferrer" className="hover:text-magenta">
+          <a href="https://castillocoder.netlify.app/" target="_blank" rel="noopener noreferrer" className="hover:text-magenta">
             Creado por CastilloCoder
           </a>
         </div>
