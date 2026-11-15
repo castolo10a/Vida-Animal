@@ -43,7 +43,7 @@ export default function Hero() {
               <span className="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-lime-soft text-lime-dark">
                 <FiClock size={18} aria-hidden />
               </span>
-              Urgencias y hospitalización 24 h
+              Urgencias y hospitalización 24h
             </li>
             <li className="flex items-center gap-3">
               <span className="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-cyan-soft text-cyan-dark">
